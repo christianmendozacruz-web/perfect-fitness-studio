@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Perfect Fitness Studio | Gimnasio en Tecámac y Pachuca</title>
+<meta name="description" content="Gimnasio en Ojo de Agua, Tecámac y Pachuca: pesas, cardio, boxeo, indoor cycling y clases grupales. Conoce nuestros planes y reserva tu clase por WhatsApp.">
+<link rel="canonical" href="https://theperfectfit.mx/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Perfect Fitness Studio | Gimnasio en Tecámac y Pachuca">
+<meta property="og:description" content="Gimnasio en Ojo de Agua, Tecámac y Pachuca: pesas, cardio, boxeo, indoor cycling y clases grupales. Conoce nuestros planes y reserva tu clase por WhatsApp.">
+<meta property="og:url" content="https://theperfectfit.mx/">
+<meta property="og:image" content="https://theperfectfit.mx/assets/img/pf-hero3.jpg">
+<meta name="theme-color" content="#151413">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,125,800;0,125,900;1,125,900&amp;family=Open+Sans:wght@400;500;600;700&amp;display=swap">
+<style>
+body{margin:0;background:#151413}
+a{color:#F5F5F0}a:hover{color:#D9BD16}
+input,select,button{font-family:inherit}
+@keyframes pf-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.pf-marquee{animation:pf-scroll 45s linear infinite}
+.pf-marquee:hover{animation-play-state:paused}
+@media (prefers-reduced-motion: reduce){.pf-marquee{animation:none}}
+@keyframes pf-faqin{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:none}}
+.pf-faq-a{animation:pf-faqin .3s ease-out}
+.pf-bg{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.pf-bg-side{position:absolute;top:0;height:100%;width:170px;opacity:.5;filter:drop-shadow(0 0 6px rgba(217,189,22,.25))}
+.pf-bg-left{left:0}.pf-bg-right{right:0;transform:rotate(180deg)}
+.pf-bg-side g{transform-box:view-box}
+@keyframes pf-bg-sway-a{0%,100%{transform:translateX(0)}50%{transform:translateX(14px)}}
+@keyframes pf-bg-sway-b{0%,100%{transform:translateX(0)}50%{transform:translateX(-14px)}}
+.pf-bg-a{animation:pf-bg-sway-a 11s ease-in-out infinite}.pf-bg-b{animation:pf-bg-sway-b 11s ease-in-out infinite}
+.pf-bg-run{stroke-dasharray:70 930;animation:pf-bg-run 9s linear infinite;opacity:.9}.pf-bg-run2{animation-duration:12s;animation-delay:-4s}
+@keyframes pf-bg-run{from{stroke-dashoffset:1000}to{stroke-dashoffset:0}}
+@keyframes pf-bg-pulse{0%,100%{opacity:.55}50%{opacity:1}}
+.pf-bg-node{animation:pf-bg-pulse 3.5s ease-in-out infinite}.pf-bg-n2{animation-delay:-1.2s}.pf-bg-n3{animation-delay:-2.4s}
+.pf-page{position:relative;z-index:1}
+@media (max-width:640px){.pf-bg-side{width:80px;opacity:.32}}
+@media (prefers-reduced-motion: reduce){.pf-bg *{animation:none !important}}
+@keyframes pf-slide{from{transform:translateX(110%)}to{transform:translateX(0)}}
+@keyframes pf-fadein{from{opacity:0}to{opacity:1}}
+.pf-drawer{animation:pf-slide .3s ease-out}
+.pf-fade{animation:pf-fadein .3s ease-out}
+html{scroll-behavior:smooth;scroll-padding-top:100px}
+.pf-week-mobile{display:none}
+@media (max-width:640px){.pf-week-desktop{display:none}.pf-week-mobile{display:block}.pf-hours{gap:8px !important;margin-bottom:32px !important}.pf-hours-card{flex-basis:100% !important;padding:12px 16px !important;border-radius:14px !important;display:flex;justify-content:space-between;align-items:center;gap:12px}.pf-hours-card p{margin:0 !important;font-size:15px !important}}
+@media (min-width:641px) and (max-width:1000px){.pf-week-desktop > div{grid-template-columns:repeat(3,minmax(0,1fr)) !important}}
+.pf-suc-cell{padding:16px 24px 28px}
+.pf-suc-btn{padding:10px 18px;font-size:15px}
+@media (max-width:640px){.pf-suc-cell{padding:10px 10px 20px;gap:12px !important}.pf-suc-btns{max-width:170px !important;gap:6px !important}.pf-suc-btn{padding:7px 10px;font-size:13px;min-height:40px !important}}
+@keyframes pf-pop{0%,70%,100%{transform:scale(1) rotate(0)}78%{transform:scale(1.12) rotate(-2deg)}86%{transform:scale(0.96) rotate(1deg)}93%{transform:scale(1.04) rotate(0)}}
+.pf-pop{animation:pf-pop 3.2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.pf-pop{animation:none}}
+.pf-tile svg g,.pf-tile svg path{transform-box:fill-box}
+@keyframes pf-lift{0%,100%{transform:translateY(7px)}50%{transform:translateY(-5px)}}
+.pf-a-lift{animation:pf-lift 1.6s ease-in-out infinite}
+@keyframes pf-punch{0%,35%{transform:translateX(-18px)}50%,58%{transform:translateX(0)}75%,100%{transform:translateX(-18px)}}
+.pf-a-punch{animation:pf-punch 1.3s ease-in-out infinite}
+@keyframes pf-hit{0%,46%{opacity:0;transform:scale(.6)}52%,62%{opacity:1;transform:scale(1)}74%,100%{opacity:0;transform:scale(.6)}}
+.pf-a-hit{transform-origin:left center;animation:pf-hit 1.3s ease-in-out infinite}
+@keyframes pf-spin{to{transform:rotate(360deg)}}
+.pf-a-spin{transform-origin:center;animation:pf-spin 1s linear infinite}
+@keyframes pf-ride{0%,100%{transform:translateY(0)}50%{transform:translateY(2px)}}
+.pf-a-ride{animation:pf-ride .5s ease-in-out infinite}
+@keyframes pf-pa{0%,100%{opacity:1}50%{opacity:0}}
+@keyframes pf-pb{0%,100%{opacity:0}50%{opacity:1}}
+.pf-a-pedal-a{animation:pf-pa .5s steps(1) infinite}.pf-a-pedal-b{animation:pf-pb .5s steps(1) infinite}
+@keyframes pf-climb{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.pf-a-climb{animation:pf-climb .9s ease-in-out infinite}
+@keyframes pf-la{0%,100%{transform:rotate(-14deg)}50%{transform:rotate(12deg)}}
+@keyframes pf-lb{0%,100%{transform:rotate(12deg)}50%{transform:rotate(-14deg)}}
+.pf-a-leg-a{transform-origin:0% 0%;animation:pf-la .9s ease-in-out infinite}.pf-a-leg-b{transform-origin:80% 0%;animation:pf-lb .9s ease-in-out infinite}
+@keyframes pf-check{0%,15%{stroke-dashoffset:40}45%,85%{stroke-dashoffset:0}100%{stroke-dashoffset:40}}
+.pf-a-check{stroke-dasharray:40;animation:pf-check 2.2s ease-in-out infinite}
+@keyframes pf-apple{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.pf-a-apple{animation:pf-apple 1.1s ease-in-out infinite}
+@media (max-width:900px){.pf-deco{display:none !important}}
+@media (max-width:640px){.pf-svc-sec{padding:24px 12px 48px !important}.pf-svc-grid{gap:6px !important}.pf-svc-desc{display:none}.pf-tile{border-radius:10px !important;padding:14% 3% 10% !important}.pf-tile-ico{width:62% !important}.pf-tile h3{font-size:7.5px !important;white-space:nowrap}.pf-cyc-full{display:none}}
+@media (prefers-reduced-motion: reduce){.pf-tile svg *{animation:none !important}}
+@media (max-width:640px){.pf-inst-wrap{padding:16px 16px 56px !important}.pf-plans-wrap{padding:56px 12px 24px !important}.pf-plans-grid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:24px 10px !important}.pf-plan{padding:24px 12px 16px !important;gap:10px !important;border-radius:16px !important}.pf-plan-title{font-size:13px !important}.pf-plan-price{font-size:24px !important}.pf-plan-per,.pf-plan-ins{font-size:11px !important}.pf-plan-desc{font-size:12px !important}.pf-plan-btn{font-size:12px !important;padding:10px 8px !important}.pf-plan-list{font-size:12px !important;gap:7px !important}.pf-plan-list li{gap:6px !important}.pf-plan-chk{width:15px;height:15px}.pf-plan-note{font-size:11px !important}.pf-plan-badge{font-size:10px !important;left:12px !important;padding:4px 8px !important;top:-11px !important}}
+@media (max-width:640px){.pf-topbar{font-size:11px !important}.pf-topbar > div{gap:2px 10px !important;padding:6px 10px !important}.pf-tb-dot{display:none}}
+.pf-hdr-cta{padding:12px 20px;font-size:15px}
+@media (max-width:640px){.pf-hdr-pill{padding:8px 8px 8px 14px !important;gap:8px !important}.pf-hdr-cta{padding:8px 10px;font-size:12px;gap:5px !important;min-height:40px !important}.pf-hdr-cta svg{width:14px;height:14px}.pf-hdr-logo{height:24px !important}.pf-hdr-menu{width:44px !important;height:44px !important}}
+@media (max-width:640px){.pf-foot{grid-template-columns:repeat(2,minmax(0,1fr)) !important;gap:28px 16px !important;padding:40px 16px 16px !important}.pf-foot-brand{grid-column:1 / -1}}
+@media (min-width:1150px){.pf-testi-row{display:grid !important;grid-template-columns:repeat(5,minmax(0,1fr));overflow-x:visible !important}.pf-testi{width:auto !important}}
+@media (max-width:640px){.pf-testi{width:72vw !important}.pf-testi-row{padding:0 16px 8px !important;scroll-padding-left:16px !important}}
+.pf-hero{min-height:620px}
+.pf-hero-img{object-position:50% center}
+.pf-hero-scrim{background:linear-gradient(90deg,rgba(21,20,19,0.9) 0%,rgba(21,20,19,0.55) 32%,rgba(21,20,19,0) 50%),linear-gradient(0deg,rgba(21,20,19,0.75) 0%,rgba(21,20,19,0) 40%)}
+@media (max-width:640px){.pf-hero{min-height:640px}.pf-hero-img{object-position:48% center}.pf-hero-scrim{background:linear-gradient(0deg,rgba(21,20,19,0.95) 0%,rgba(21,20,19,0.8) 30%,rgba(21,20,19,0) 58%)}}
+</style>
+</head>
+<body data-branch="">
+<div class="pf-bg" aria-hidden="true">
+<svg class="pf-bg-side pf-bg-left" viewBox="0 0 160 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<g class="pf-bg-a"><path d="M30 0 V120 C30 170 110 190 110 250 V380 C110 440 30 460 30 520 V700 C30 760 100 780 100 840 V1000" fill="none" stroke="#7A2A9E" stroke-width="2"/><path class="pf-bg-run" d="M30 0 V120 C30 170 110 190 110 250 V380 C110 440 30 460 30 520 V700 C30 760 100 780 100 840 V1000" fill="none" stroke="#C26BF0" stroke-width="3" stroke-linecap="round" pathLength="1000"/></g>
+<g class="pf-bg-b"><path d="M70 0 V140 C70 190 20 210 20 270 V360 C20 420 112 450 112 510 V650 C112 710 40 740 40 800 V1000" fill="none" stroke="#D9BD16" stroke-width="2"/><path class="pf-bg-run pf-bg-run2" d="M70 0 V140 C70 190 20 210 20 270 V360 C20 420 112 450 112 510 V650 C112 710 40 740 40 800 V1000" fill="none" stroke="#FFE36A" stroke-width="3" stroke-linecap="round" pathLength="1000"/></g>
+<g class="pf-bg-a"><circle class="pf-bg-node" cx="110" cy="250" r="6" fill="#D9BD16" stroke="#7A2A9E" stroke-width="3"/><circle class="pf-bg-node pf-bg-n2" cx="30" cy="520" r="6" fill="#D9BD16" stroke="#7A2A9E" stroke-width="3"/><circle class="pf-bg-node pf-bg-n3" cx="100" cy="840" r="6" fill="#D9BD16" stroke="#7A2A9E" stroke-width="3"/></g>
+<g opacity="0.9"><path d="M58 330 L74 300" stroke="#7A2A9E" stroke-width="5" stroke-linecap="butt"/><path d="M68 330 L84 300" stroke="#D9BD16" stroke-width="5"/><path d="M58 960 L74 930" stroke="#7A2A9E" stroke-width="5"/><path d="M68 960 L84 930" stroke="#D9BD16" stroke-width="5"/></g>
+</svg>
+<svg class="pf-bg-side pf-bg-right" viewBox="0 0 160 1000" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+<g class="pf-bg-a"><path d="M30 0 V120 C30 170 110 190 110 250 V380 C110 440 30 460 30 520 V700 C30 760 100 780 100 840 V1000" fill="none" stroke="#7A2A9E" stroke-width="2"/><path class="pf-bg-run" d="M30 0 V120 C30 170 110 190 110 250 V380 C110 440 30 460 30 520 V700 C30 760 100 780 100 840 V1000" fill="none" stroke="#C26BF0" stroke-width="3" stroke-linecap="round" pathLength="1000"/></g>
+<g class="pf-bg-b"><path d="M70 0 V140 C70 190 20 210 20 270 V360 C20 420 112 450 112 510 V650 C112 710 40 740 40 800 V1000" fill="none" stroke="#D9BD16" stroke-width="2"/><path class="pf-bg-run pf-bg-run2" d="M70 0 V140 C70 190 20 210 20 270 V360 C20 420 112 450 112 510 V650 C112 710 40 740 40 800 V1000" fill="none" stroke="#FFE36A" stroke-width="3" stroke-linecap="round" pathLength="1000"/></g>
+<g class="pf-bg-a"><circle class="pf-bg-node" cx="110" cy="250" r="6" fill="#D9BD16" stroke="#7A2A9E" stroke-width="3"/><circle class="pf-bg-node pf-bg-n2" cx="30" cy="520" r="6" fill="#D9BD16" stroke="#7A2A9E" stroke-width="3"/><circle class="pf-bg-node pf-bg-n3" cx="100" cy="840" r="6" fill="#D9BD16" stroke="#7A2A9E" stroke-width="3"/></g>
+<g opacity="0.9"><path d="M58 330 L74 300" stroke="#7A2A9E" stroke-width="5" stroke-linecap="butt"/><path d="M68 330 L84 300" stroke="#D9BD16" stroke-width="5"/><path d="M58 960 L74 930" stroke="#7A2A9E" stroke-width="5"/><path d="M68 960 L84 930" stroke="#D9BD16" stroke-width="5"/></g>
+</svg>
+</div>
+<div class="pf-page" style="font-family: 'Open Sans', system-ui, sans-serif; color: #F5F5F0; background: transparent; width: 100%; min-height: 100vh">
+
+<div class="pf-topbar" style="background: #63187A; color: #FFFFFF; font-size: 13px; font-weight: 600">
+<div style="max-width: 1408px; margin: 0 auto; padding: 8px 16px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 4px 18px; text-align: center">
+<span style="display: inline-flex; align-items: center; gap: 6px"><svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span style="color: #D9BD16; font-weight: 800; text-transform: uppercase; letter-spacing: 1px">Horarios</span></span>
+<span>Lun a Vie <strong>5:30 AM – 10:30 PM</strong></span>
+<span aria-hidden="true" class="pf-tb-dot" style="color: #D9BD16">•</span>
+<span>Sáb <strong>7:00 AM – 3:00 PM</strong></span>
+<span aria-hidden="true" class="pf-tb-dot" style="color: #D9BD16">•</span>
+<span>Dom <strong>8:00 AM – 2:00 PM</strong></span>
+</div>
+</div>
+<header style="position: sticky; top: 0; z-index: 40; padding: 12px 16px 0">
+<div class="pf-hdr-pill" style="max-width: 1408px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 10px 10px 10px 28px; border-radius: 999px; background: rgba(30,28,27,0.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border: 1px solid #2E2B29; box-shadow: 0 10px 30px rgba(0,0,0,0.35)">
+<a href="#inicio" aria-label="The Perfect Fitness Studio, ir al inicio" style="text-decoration: none; display: flex; align-items: center">
+<img src="/assets/img/pf-logo.png" alt="The Perfect Fitness Studio" class="pf-hdr-logo" style="height: 36px; width: auto; display: block">
+</a>
+<div style="display: flex; align-items: center; gap: 10px">
+<a class="pf-hdr-cta" href="#horarios" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap; background: #D9BD16; color: #151413; border-radius: 999px; font-weight: 800; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#151413" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>Reserva tu clase</a>
+<button type="button" data-menu-open aria-label="Abrir menú" aria-expanded="false" class="pf-hdr-menu" style="flex: none; width: 56px; height: 56px; border-radius: 50%; border: 0; background: #D9BD16; display: flex; align-items: center; justify-content: center; cursor: pointer">
+<svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#151413" stroke-width="2.5" stroke-linecap="round"><path d="M5 9h14M5 15h14"/></svg>
+</button>
+</div>
+</div>
+</header>
+<div id="pf-drawer" style="display: none">
+<div style="position: fixed; inset: 0; z-index: 60">
+<button type="button" data-menu-close aria-label="Cerrar menú" class="pf-fade" style="position: absolute; inset: 0; width: 100%; height: 100%; border: 0; padding: 0; background: rgba(0,0,0,0.6); cursor: pointer"></button>
+<nav aria-label="Principal" class="pf-drawer" style="position: absolute; top: 12px; right: 12px; bottom: 12px; width: min(380px, calc(100% - 24px)); box-sizing: border-box; background: #1E1C1B; border: 1px solid #2E2B29; border-radius: 28px; padding: 20px 28px 28px; display: flex; flex-direction: column; overflow-y: auto">
+<div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px">
+<img src="/assets/img/pf-logo.png" alt="" style="height: 30px; width: auto; display: block">
+<button type="button" data-menu-close aria-label="Cerrar menú" style="width: 48px; height: 48px; border-radius: 50%; border: 1px solid #3D3936; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5F5F0" stroke-width="2.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+</button>
+</div>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #2E2B29">
+<a href="#clases" data-menu-close style="text-decoration: none; color: #F5F5F0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 22px; text-transform: uppercase; padding: 13px 0; border-bottom: 1px solid #2E2B29">Servicios y clases</a>
+<a href="#planes" data-menu-close style="text-decoration: none; color: #F5F5F0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 22px; text-transform: uppercase; padding: 13px 0; border-bottom: 1px solid #2E2B29">Planes</a>
+<a href="#instalaciones" data-menu-close style="text-decoration: none; color: #F5F5F0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 22px; text-transform: uppercase; padding: 13px 0; border-bottom: 1px solid #2E2B29">Instalaciones</a>
+<a href="#horarios" data-menu-close style="text-decoration: none; color: #F5F5F0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 22px; text-transform: uppercase; padding: 13px 0; border-bottom: 1px solid #2E2B29">Horarios</a>
+<a href="#testimonios" data-menu-close style="text-decoration: none; color: #F5F5F0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 22px; text-transform: uppercase; padding: 13px 0; border-bottom: 1px solid #2E2B29">Testimonios</a>
+<a href="#faq" data-menu-close style="text-decoration: none; color: #F5F5F0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 22px; text-transform: uppercase; padding: 13px 0; border-bottom: 1px solid #2E2B29">Preguntas frecuentes</a>
+<a href="#contacto" data-menu-close style="text-decoration: none; color: #F5F5F0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 22px; text-transform: uppercase; padding: 13px 0; border-bottom: 1px solid #2E2B29">Contacto</a>
+</div>
+<div style="margin-top: auto; padding-top: 32px; display: flex; flex-direction: column; gap: 12px">
+<a href="#clase-muestra" data-menu-close style="text-decoration: none; text-align: center; background: #D9BD16; color: #151413; padding: 16px 24px; border-radius: 999px; font-weight: 700; font-size: 17px">Agenda tu clase</a>
+<a href="https://wa.me/525644121830?text=Hola%2C%20quiero%20informes%20de%20The%20Perfect%20Fitness%20Studio" target="_blank" rel="noopener" style="text-decoration: none; text-align: center; border: 2px solid #25D366; color: #F5F5F0; padding: 14px 24px; border-radius: 999px; font-weight: 600; font-size: 17px">Escríbenos por WhatsApp</a>
+</div>
+</nav>
+</div>
+</div>
+
+<section id="inicio" style="padding: 16px">
+<div class="pf-hero" style="position: relative; max-width: 1408px; margin: 0 auto; border-radius: 24px; overflow: hidden; background: #1E1C1B; display: flex; flex-direction: column; justify-content: flex-end">
+<img class="pf-hero-img" src="/assets/img/pf-hero3.jpg" alt="Mujer y hombre en un gimnasio con luces moradas" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<div class="pf-hero-scrim" aria-hidden="true" style="position: absolute; inset: 0"></div>
+<div style="position: relative; padding: 48px clamp(20px, 5vw, 72px) 24px; max-width: 500px; display: flex; flex-direction: column; gap: 14px">
+<h1 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(19px, 2.2vw, 30px); line-height: 1.1; text-transform: uppercase; overflow-wrap: break-word">Tu espacio,<br>tu transformación</h1>
+<p style="margin: 0; font-size: clamp(16px, 1.5vw, 20px); line-height: 1.45; color: #E4E0DC">Pesas, cardio, boxeo y clases dirigidas en un espacio moderno, con acompañamiento profesional.</p>
+</div>
+<div style="position: relative; display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; padding: 0 20px 40px">
+<a href="#planes" style="text-decoration: none; background: #D9BD16; color: #151413; padding: 16px 32px; border-radius: 999px; font-weight: 700; font-size: 17px">Únete hoy</a>
+<a href="#clase-muestra" style="text-decoration: none; background: rgba(21,20,19,0.55); border: 2px solid #F5F5F0; color: #F5F5F0; padding: 14px 30px; border-radius: 999px; font-weight: 600; font-size: 17px">Agenda tu clase</a>
+</div>
+</div>
+</section>
+
+<section aria-label="Lo que te ofrecemos" style="background: #D9BD16; color: #151413; overflow: hidden; border-top: 3px solid #63187A; border-bottom: 3px solid #63187A">
+<div class="pf-marquee" style="display: flex; width: max-content; padding: 18px 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 18px; letter-spacing: 0.5px; white-space: nowrap">
+<div style="display: flex; flex: none; align-items: center"><span style="padding: 0 22px">GYM Y PESAS</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">BOXEO</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">CLASES GRUPALES</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">COACHES CERTIFICADOS</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">PLANES A TU MEDIDA</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">ENTRENAMIENTO FUNCIONAL</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">HORARIOS AMPLIOS</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">INSTALACIONES EQUIPADAS</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">ENTRENAMIENTO PERSONALIZADO</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">DOS SUCURSALES</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">TECÁMAC Y PACHUCA</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">ENTRENA A TU RITMO</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">TU ESPACIO, TU TRANSFORMACIÓN</span><span aria-hidden="true" style="color: #63187A">•</span></div>
+<div aria-hidden="true" style="display: flex; flex: none; align-items: center"><span style="padding: 0 22px">GYM Y PESAS</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">BOXEO</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">CLASES GRUPALES</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">COACHES CERTIFICADOS</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">PLANES A TU MEDIDA</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">ENTRENAMIENTO FUNCIONAL</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">HORARIOS AMPLIOS</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">INSTALACIONES EQUIPADAS</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">ENTRENAMIENTO PERSONALIZADO</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">DOS SUCURSALES</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">TECÁMAC Y PACHUCA</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">ENTRENA A TU RITMO</span><span aria-hidden="true" style="color: #63187A">•</span><span style="padding: 0 22px">TU ESPACIO, TU TRANSFORMACIÓN</span><span aria-hidden="true" style="color: #63187A">•</span></div>
+</div>
+</section>
+<section id="sucursales" aria-labelledby="pf-suc-title" style="background: rgba(22,21,20,0.85); padding-top: 20px">
+<h2 id="pf-suc-title" style="margin: 0 0 4px; padding: 0 24px; text-align: center; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(15px, 2vw, 24px); text-transform: uppercase; text-shadow: 2px 2px 0 #63187A"><span class="pf-pop" style="display: inline-block">Elige tu <span style="color: #D9BD16">sucursal</span></span></h2>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr))">
+<div class="pf-suc-cell" style="display: flex; flex-direction: column; align-items: center; gap: 16px; min-width: 0">
+<img src="/assets/img/pf-logo-tec.png" alt="The Perfect Fitness Studio Tecámac" style="display: block; width: 100%; max-width: 300px; height: auto">
+<div class="pf-suc-btns" style="display: flex; flex-direction: column; gap: 8px; width: 100%; max-width: 230px">
+<a class="pf-suc-btn" href="https://maps.app.goo.gl/85FJfRutcDW53GMG7" target="_blank" rel="noopener" aria-label="Ver ubicación de Tecámac" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px; white-space: nowrap; background: #D9BD16; color: #151413; border: 2px solid #D9BD16; border-radius: 999px; font-weight: 700; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#151413" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Ver ubicación</a>
+<a class="pf-suc-btn" href="#clases" aria-label="Ver la sucursal Tecámac" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px; white-space: nowrap; background: transparent; color: #F5F5F0; border: 2px solid #F5F5F0; border-radius: 999px; font-weight: 700; min-height: 44px; box-sizing: border-box">Ver sucursal<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5F5F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M9 5l7 7-7 7"/></svg></a>
+</div>
+</div>
+<div class="pf-suc-cell" style="display: flex; flex-direction: column; align-items: center; gap: 16px; min-width: 0">
+<img src="/assets/img/pf-logo-pac.png" alt="The Perfect Fitness Studio Pachuca" style="display: block; width: 100%; max-width: 300px; height: auto">
+<div class="pf-suc-btns" style="display: flex; flex-direction: column; gap: 8px; width: 100%; max-width: 230px">
+<a class="pf-suc-btn" href="https://maps.app.goo.gl/97KxiCiWRRUf5NF48" target="_blank" rel="noopener" aria-label="Ver ubicación de Pachuca" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px; white-space: nowrap; background: #D9BD16; color: #151413; border: 2px solid #D9BD16; border-radius: 999px; font-weight: 700; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#151413" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Ver ubicación</a>
+<a class="pf-suc-btn" href="/pachuca/" aria-label="Ver la sucursal Pachuca" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 8px; white-space: nowrap; background: transparent; color: #F5F5F0; border: 2px solid #F5F5F0; border-radius: 999px; font-weight: 700; min-height: 44px; box-sizing: border-box">Ver sucursal<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F5F5F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><path d="M9 5l7 7-7 7"/></svg></a>
+</div>
+</div>
+</div>
+</section>
+<section id="clases" class="pf-svc-sec" style="max-width: 1280px; margin: 0 auto; padding: 48px 24px 88px">
+<div style="display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; margin-bottom: 32px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #D9BD16">Servicios y clases</p>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(18px, 2.4vw, 30px); text-transform: uppercase; line-height: 1.1">Todo para entrenar en un solo lugar</h2>
+</div>
+<div style="display: flex; align-items: center; gap: 0">
+<div class="pf-deco" aria-hidden="true" style="flex: none; display: flex; align-items: center; margin-right: 10px; margin-top: -60px"><span style="display: block; width: 40px; height: 5px; background: #63187A"></span><span style="display: block; width: 22px; height: 22px; border-radius: 50%; border: 5px solid #63187A; background: #D9BD16"></span></div>
+<div class="pf-svc-grid" style="flex: 1 1 auto; min-width: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px">
+<article style="display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<div class="pf-tile" style="background: #63187A; border-radius: 22px; aspect-ratio: 1 / 1; padding: 14% 14% 8%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 6%">
+<div class="pf-tile-ico" style="width: 78%; flex: 1 1 auto; min-height: 0; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+<g class="pf-a-lift" fill="#FFFFFF"><rect x="8" y="15" width="84" height="5" rx="2"/><rect x="10" y="5" width="8" height="25" rx="2"/><rect x="20" y="9" width="5" height="17" rx="2"/><rect x="82" y="5" width="8" height="25" rx="2"/><rect x="75" y="9" width="5" height="17" rx="2"/><path d="M33 18 L40 66" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none"/><path d="M67 18 L60 66" stroke="#FFFFFF" stroke-width="8" stroke-linecap="round" fill="none"/></g>
+<circle cx="50" cy="40" r="9" fill="#FFFFFF"/><rect x="38" y="53" width="24" height="44" rx="5" fill="#FFFFFF"/></svg></div>
+<h3 style="margin: 0; text-align: center; color: #FFFFFF; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-style: italic; font-size: clamp(8px, 1.9vw, 24px); line-height: 1; text-transform: uppercase">Gym</h3>
+</div>
+<p class="pf-svc-desc" style="margin: 0; text-align: center; color: #B4B4B8; font-size: 15px; line-height: 1.45">Pesas y máquinas para armar tu rutina.</p>
+</article>
+<article style="display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<div class="pf-tile" style="background: #D9BD16; border-radius: 22px; aspect-ratio: 1 / 1; padding: 14% 14% 8%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 6%">
+<div class="pf-tile-ico" style="width: 78%; flex: 1 1 auto; min-height: 0; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+<g class="pf-a-punch" fill="#3A0F4D"><rect x="26" y="47" width="48" height="9" rx="4"/><circle cx="78" cy="51" r="10"/></g>
+<g class="pf-a-hit" stroke="#3A0F4D" stroke-width="4" stroke-linecap="round"><path d="M92 36 L97 31"/><path d="M94 51 L100 51"/><path d="M92 66 L97 71"/></g>
+<path d="M14 97 L18 50 Q20 40 32 40 L40 40 Q48 40 48 50 L46 97 Z" fill="#3A0F4D"/><circle cx="34" cy="25" r="11" fill="#3A0F4D"/><circle cx="46" cy="58" r="9" fill="#3A0F4D" stroke="#D9BD16" stroke-width="2.5"/></svg></div>
+<h3 style="margin: 0; text-align: center; color: #3A0F4D; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-style: italic; font-size: clamp(8px, 1.9vw, 24px); line-height: 1; text-transform: uppercase">Boxeo</h3>
+</div>
+<p class="pf-svc-desc" style="margin: 0; text-align: center; color: #B4B4B8; font-size: 15px; line-height: 1.45">Técnica, golpeo y condición.</p>
+</article>
+<article style="display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<div class="pf-tile" style="background: #63187A; border-radius: 22px; aspect-ratio: 1 / 1; padding: 14% 14% 8%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 6%">
+<div class="pf-tile-ico" style="width: 78%; flex: 1 1 auto; min-height: 0; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+<path d="M10 96 L26 70 L74 70" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M10 96 H90" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/><path d="M66 70 L74 40 L84 36" stroke="#FFFFFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<circle cx="74" cy="78" r="15" stroke="#FFFFFF" stroke-width="5" fill="none"/>
+<g class="pf-a-spin" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"><path d="M74 66 V90"/><path d="M62 78 H86"/><path d="M66 70 L82 86"/><path d="M82 70 L66 86"/></g>
+<g class="pf-a-ride" fill="#FFFFFF"><circle cx="46" cy="14" r="8"/><path d="M44 24 L30 50" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/><path d="M42 28 L72 40" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round"/></g>
+<g class="pf-a-pedal-a" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" fill="none"><path d="M30 50 L48 56 L44 74"/></g>
+<g class="pf-a-pedal-b" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" fill="none"><path d="M30 50 L40 64 L52 70"/></g></svg></div>
+<h3 style="margin: 0; text-align: center; color: #FFFFFF; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-style: italic; font-size: clamp(8px, 1.9vw, 24px); line-height: 1; text-transform: uppercase"><span class="pf-cyc-full">Indoor<br></span>cycling</h3>
+</div>
+<p class="pf-svc-desc" style="margin: 0; text-align: center; color: #B4B4B8; font-size: 15px; line-height: 1.45">Cardio con música y energía de grupo.</p>
+</article>
+<article style="display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<div class="pf-tile" style="background: #D9BD16; border-radius: 22px; aspect-ratio: 1 / 1; padding: 14% 14% 8%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 6%">
+<div class="pf-tile-ico" style="width: 78%; flex: 1 1 auto; min-height: 0; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+<path d="M46 96 V84 H60 V70 H74 V56 H88 V96 Z" fill="#3A0F4D"/><path d="M88 96 V30 Q88 22 80 22 Q72 22 72 30 V44" stroke="#3A0F4D" stroke-width="5" stroke-linecap="round" fill="none"/><path d="M8 96 H94" stroke="#3A0F4D" stroke-width="5" stroke-linecap="round"/>
+<g class="pf-a-climb"><circle cx="40" cy="12" r="8" fill="#3A0F4D"/><path d="M38 22 L32 50" stroke="#3A0F4D" stroke-width="9" stroke-linecap="round"/><path d="M37 28 L56 40 L68 34" stroke="#3A0F4D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/><path d="M36 28 L24 44" stroke="#3A0F4D" stroke-width="5" stroke-linecap="round"/>
+<g class="pf-a-leg-a"><path d="M32 50 L46 62 L48 82" stroke="#3A0F4D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+<g class="pf-a-leg-b"><path d="M32 50 L26 70 L22 90" stroke="#3A0F4D" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g></g></svg></div>
+<h3 style="margin: 0; text-align: center; color: #3A0F4D; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-style: italic; font-size: clamp(8px, 1.9vw, 24px); line-height: 1; text-transform: uppercase">Cardio</h3>
+</div>
+<p class="pf-svc-desc" style="margin: 0; text-align: center; color: #B4B4B8; font-size: 15px; line-height: 1.45">Equipos para trabajar tu resistencia.</p>
+</article>
+<article style="display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<div class="pf-tile" style="background: #63187A; border-radius: 22px; aspect-ratio: 1 / 1; padding: 14% 14% 8%; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 6%">
+<div class="pf-tile-ico" style="width: 78%; flex: 1 1 auto; min-height: 0; display: flex; align-items: center; justify-content: center"><svg viewBox="0 0 100 100" width="100%" height="100%" aria-hidden="true">
+<circle cx="44" cy="20" r="13" fill="#FFFFFF"/><path d="M20 90 V58 Q20 40 38 40 H52 Q60 40 64 46 V90 Z" fill="#FFFFFF"/>
+<rect x="54" y="40" width="34" height="46" rx="4" fill="#63187A" stroke="#FFFFFF" stroke-width="5"/><rect x="64" y="35" width="14" height="9" rx="2" fill="#FFFFFF"/>
+<path class="pf-a-check" d="M62 64 L69 72 L82 56" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+<g class="pf-a-apple"><circle cx="14" cy="80" r="10" fill="#FFFFFF" stroke="#63187A" stroke-width="2.5"/><path d="M14 70 Q16 63 22 62" stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round"/></g></svg></div>
+<h3 style="margin: 0; text-align: center; color: #FFFFFF; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-style: italic; font-size: clamp(8px, 1.9vw, 24px); line-height: 1; text-transform: uppercase">Nutrición</h3>
+</div>
+<p class="pf-svc-desc" style="margin: 0; text-align: center; color: #B4B4B8; font-size: 15px; line-height: 1.45">Orientación para acompañar tu entrenamiento. Detalles: [POR CONFIRMAR]</p>
+</article>
+</div>
+<div class="pf-deco" aria-hidden="true" style="flex: none; display: flex; gap: 8px; margin-left: 16px; margin-top: -60px"><span style="display: block; width: 8px; height: 190px; background: #63187A; transform: skewX(-14deg)"></span><span style="display: block; width: 8px; height: 190px; background: #D9BD16; transform: skewX(-14deg)"></span></div>
+</div>
+</section>
+<section id="planes" style="background: rgba(30,28,27,0.82)">
+<div class="pf-plans-wrap" style="max-width: 1280px; margin: 0 auto; padding: 88px 24px 40px">
+<div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 44px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #D9BD16">Planes y membresías</p>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(24px, 3.4vw, 44px); text-transform: uppercase; line-height: 1.05">Elige tu plan</h2>
+<p style="margin: 0; color: #B4B4B8; font-size: 16px">The Perfect Fitness Studio — Tecámac</p>
+</div>
+<div class="pf-plans-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: 32px 20px">
+<article class="pf-plan" style="position: relative; background: #232120; border: 1px solid #2E2B29; border-radius: 22px; padding: 30px 24px 26px; display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<h3 class="pf-plan-title" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 20px; line-height: 1.15; text-transform: uppercase">Plan Gym</h3>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px"><span class="pf-plan-price" style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 36px; line-height: 1">$599</span><span class="pf-plan-per" style="color: #CFCAC5; font-size: 14px; font-weight: 600">MXN / mes</span></p>
+<p class="pf-plan-ins" style="margin: 0; color: #D9BD16; font-size: 14px; font-weight: 700">Inscripción: $299</p>
+</div>
+<a class="pf-plan-btn" href="https://wa.me/525644121830?text=Hola%2C%20me%20interesa%20el%20Plan%20Gym%20de%20The%20Perfect%20Fitness%20Studio%20Tec%C3%A1mac.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" style="text-decoration: none; text-align: center; background: #D9BD16; color: #151413; padding: 14px 16px; border-radius: 999px; font-weight: 800; font-size: 16px; min-height: 44px; box-sizing: border-box">Agenda tu visita</a>
+<ul class="pf-plan-list" style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; font-weight: 600; line-height: 1.4"><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Acceso al gimnasio completo.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Área de cardio, pesas y máquinas.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Regaderas.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Coaches certificados.</span></li></ul>
+</article>
+<article class="pf-plan" style="position: relative; background: #232120; border: 1px solid #2E2B29; border-radius: 22px; padding: 30px 24px 26px; display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<h3 class="pf-plan-title" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 20px; line-height: 1.15; text-transform: uppercase">Plan Boxeo</h3>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px"><span class="pf-plan-price" style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 36px; line-height: 1">$499</span><span class="pf-plan-per" style="color: #CFCAC5; font-size: 14px; font-weight: 600">MXN / mes</span></p>
+<p class="pf-plan-ins" style="margin: 0; color: #D9BD16; font-size: 14px; font-weight: 700">Inscripción por confirmar</p>
+</div>
+<a class="pf-plan-btn" href="https://wa.me/525644121830?text=Hola%2C%20me%20interesa%20el%20Plan%20Boxeo%20de%20The%20Perfect%20Fitness%20Studio%20Tec%C3%A1mac.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" style="text-decoration: none; text-align: center; background: #D9BD16; color: #151413; padding: 14px 16px; border-radius: 999px; font-weight: 800; font-size: 16px; min-height: 44px; box-sizing: border-box">Comienza a entrenar</a>
+<ul class="pf-plan-list" style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; font-weight: 600; line-height: 1.4"><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Entrenamiento de boxeo.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Uso de costales.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Técnicas de golpeo.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Acondicionamiento físico.</span></li></ul>
+</article>
+<article class="pf-plan" style="position: relative; background: #232120; border: 2px solid #D9BD16; border-radius: 22px; padding: 30px 24px 26px; display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<span class="pf-plan-badge" style="position: absolute; top: -14px; left: 20px; background: #D9BD16; color: #151413; font-size: 13px; font-weight: 800; padding: 5px 12px; border-radius: 8px; text-transform: uppercase; letter-spacing: 0.5px">El más completo</span>
+<h3 class="pf-plan-title" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 20px; line-height: 1.15; text-transform: uppercase">Plan Fitness Total</h3>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px"><span class="pf-plan-price" style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 36px; line-height: 1">$749</span><span class="pf-plan-per" style="color: #CFCAC5; font-size: 14px; font-weight: 600">MXN / mes</span></p>
+<p class="pf-plan-ins" style="margin: 0; color: #D9BD16; font-size: 14px; font-weight: 700">Inscripción: $200</p>
+</div>
+<a class="pf-plan-btn" href="https://wa.me/525644121830?text=Hola%2C%20me%20interesa%20el%20Plan%20Fitness%20Total%20de%20The%20Perfect%20Fitness%20Studio%20Tec%C3%A1mac.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" style="text-decoration: none; text-align: center; background: #D9BD16; color: #151413; padding: 14px 16px; border-radius: 999px; font-weight: 800; font-size: 16px; min-height: 44px; box-sizing: border-box">Elige Fitness Total</a>
+<ul class="pf-plan-list" style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; font-weight: 600; line-height: 1.4"><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Acceso al gimnasio.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Clases de boxeo.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>5 clases a elegir entre nuestras diferentes disciplinas.</span></li></ul>
+<p class="pf-plan-note" style="margin: 0; color: #9A9AA0; font-size: 13px; line-height: 1.5">Consulta las condiciones de uso de las clases incluidas.</p>
+</article>
+<article class="pf-plan" style="position: relative; background: #232120; border: 1px solid #2E2B29; border-radius: 22px; padding: 30px 24px 26px; display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<h3 class="pf-plan-title" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 20px; line-height: 1.15; text-transform: uppercase">Plan Gym Trimestral</h3>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px"><span class="pf-plan-price" style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 36px; line-height: 1">$1,200</span><span class="pf-plan-per" style="color: #CFCAC5; font-size: 14px; font-weight: 600">MXN / 3 meses</span></p>
+<p class="pf-plan-ins" style="margin: 0; color: #D9BD16; font-size: 14px; font-weight: 700">Inscripción: $200</p>
+</div>
+<a class="pf-plan-btn" href="https://wa.me/525644121830?text=Hola%2C%20me%20interesa%20el%20Plan%20Gym%20Trimestral%20de%20The%20Perfect%20Fitness%20Studio%20Tec%C3%A1mac.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" style="text-decoration: none; text-align: center; background: #D9BD16; color: #151413; padding: 14px 16px; border-radius: 999px; font-weight: 800; font-size: 16px; min-height: 44px; box-sizing: border-box">Consulta disponibilidad</a>
+<ul class="pf-plan-list" style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; font-weight: 600; line-height: 1.4"><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Tres meses de acceso al gimnasio.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Tercer mes incluido.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Primer mes de plan nutricional incluido.</span></li></ul>
+<p class="pf-plan-note" style="margin: 0; color: #9A9AA0; font-size: 13px; line-height: 1.5">Beneficio adicional: si dos personas contratan juntas el trimestre, ambas quedan exentas del pago de inscripción.</p>
+</article>
+<article class="pf-plan" style="position: relative; background: #232120; border: 1px solid #2E2B29; border-radius: 22px; padding: 30px 24px 26px; display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<h3 class="pf-plan-title" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 20px; line-height: 1.15; text-transform: uppercase">Plan Box Trimestral</h3>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px"><span class="pf-plan-price" style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 36px; line-height: 1">$999</span><span class="pf-plan-per" style="color: #CFCAC5; font-size: 14px; font-weight: 600">MXN / 3 meses</span></p>
+<p class="pf-plan-ins" style="margin: 0; color: #D9BD16; font-size: 14px; font-weight: 700">Inscripción: $200</p>
+</div>
+<a class="pf-plan-btn" href="https://wa.me/525644121830?text=Hola%2C%20me%20interesa%20el%20Plan%20Box%20Trimestral%20de%20The%20Perfect%20Fitness%20Studio%20Tec%C3%A1mac.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" style="text-decoration: none; text-align: center; background: #D9BD16; color: #151413; padding: 14px 16px; border-radius: 999px; font-weight: 800; font-size: 16px; min-height: 44px; box-sizing: border-box">Elige Box Trimestral</a>
+<ul class="pf-plan-list" style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; font-weight: 600; line-height: 1.4"><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Tres meses de entrenamiento de boxeo.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Uso de costales.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Entrenamiento técnico.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Acondicionamiento físico.</span></li></ul>
+<p class="pf-plan-note" style="margin: 0; color: #9A9AA0; font-size: 13px; line-height: 1.5">Beneficio adicional: si te inscribes con un amigo, ninguno paga inscripción.</p>
+</article>
+<article class="pf-plan" style="position: relative; background: #232120; border: 1px solid #2E2B29; border-radius: 22px; padding: 30px 24px 26px; display: flex; flex-direction: column; gap: 14px; min-width: 0">
+<h3 class="pf-plan-title" style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 20px; line-height: 1.15; text-transform: uppercase">Paquete Inicio Boxeo</h3>
+<div style="display: flex; flex-direction: column; gap: 4px">
+<p style="margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px"><span class="pf-plan-price" style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 36px; line-height: 1">$999</span><span class="pf-plan-per" style="color: #CFCAC5; font-size: 14px; font-weight: 600">MXN / paquete</span></p>
+<p class="pf-plan-ins" style="margin: 0; color: #D9BD16; font-size: 14px; font-weight: 700">Inscripción incluida</p>
+</div>
+<a class="pf-plan-btn" href="https://wa.me/525644121830?text=Hola%2C%20me%20interesa%20el%20Paquete%20Inicio%20Boxeo%20de%20The%20Perfect%20Fitness%20Studio%20Tec%C3%A1mac.%20%C2%BFMe%20das%20m%C3%A1s%20informaci%C3%B3n%3F" target="_blank" rel="noopener" style="text-decoration: none; text-align: center; background: #D9BD16; color: #151413; padding: 14px 16px; border-radius: 999px; font-weight: 800; font-size: 16px; min-height: 44px; box-sizing: border-box">Comienza en Boxeo</a>
+<ul class="pf-plan-list" style="margin: 4px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; font-weight: 600; line-height: 1.4"><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Una mensualidad de boxeo.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Inscripción.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Guantes de boxeo.</span></li><li style="display: flex; gap: 10px; align-items: flex-start"><svg aria-hidden="true" class="pf-plan-chk" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex: none; margin-top: 2px"><circle cx="12" cy="12" r="9.5"/><path d="M8 12.3l2.7 2.7L16 9.6"/></svg><span>Vendas.</span></li></ul>
+<p class="pf-plan-note" style="margin: 0; color: #9A9AA0; font-size: 13px; line-height: 1.5">Todo lo necesario para comenzar tu entrenamiento desde el primer día.</p>
+</article>
+</div>
+<p style="margin: 36px 0 0; color: #9A9AA0; font-size: 14px; line-height: 1.6; max-width: 900px"><strong style="color: #CFCAC5">Importante:</strong> precios de referencia para The Perfect Fitness Studio Tecámac. Los planes especiales están sujetos a vigencia, disponibilidad y condiciones de contratación. Consulta las membresías correspondientes a la sucursal Pachuca.</p>
+</div>
+</section>
+<section id="instalaciones" style="background: rgba(30,28,27,0.82)">
+<div style="max-width: 1280px; margin: 0 auto; padding: 32px 24px 72px" class="pf-inst-wrap">
+<div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 40px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #D9BD16">Instalaciones</p>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(24px, 3.4vw, 44px); text-transform: uppercase; line-height: 1.05">Conoce el estudio</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 32px 64px">
+<div id="pf-sl-box" style="flex: 1 1 440px; max-width: 620px; min-width: 0; position: relative; aspect-ratio: 1 / 1; border-radius: 24px; overflow: hidden; background: #1E1C1B">
+<img data-sl-img="0" src="/assets/img/inst1.jpg" alt="Área de máquinas con piso amplio y muros morados" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 1; transform: scale(1); transition: opacity 0.7s ease, transform 1.4s ease">
+<img data-sl-img="1" src="/assets/img/inst2.jpg" alt="Zona de elípticas, bancos y discos" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.06); transition: opacity 0.7s ease, transform 1.4s ease">
+<img data-sl-img="2" src="/assets/img/inst3.jpg" alt="Rack de mancuernas y máquinas de fuerza" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.06); transition: opacity 0.7s ease, transform 1.4s ease">
+<img data-sl-img="3" src="/assets/img/inst4.jpg" alt="Pasillo de máquinas con espejos iluminados" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.06); transition: opacity 0.7s ease, transform 1.4s ease">
+<img data-sl-img="4" src="/assets/img/inst5.jpg" alt="Área de máquinas con mezzanine e iluminación" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.06); transition: opacity 0.7s ease, transform 1.4s ease">
+<img data-sl-img="5" src="/assets/img/inst6.jpg" alt="Área de máquinas junto a la escalera morada" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.06); transition: opacity 0.7s ease, transform 1.4s ease">
+<img data-sl-img="6" src="/assets/img/inst7.jpg" alt="Vista general del estudio con mezzanine morado" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transform: scale(1.06); transition: opacity 0.7s ease, transform 1.4s ease">
+<span style="position: absolute; left: 16px; bottom: 16px; background: rgba(21,20,19,0.8); color: #F5F5F0; font-weight: 700; font-size: 14px; padding: 8px 14px; border-radius: 999px"><span style="color: #D9BD16"><span id="pf-sl-cur">01</span></span> / 07</span>
+</div>
+<div style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 32px">
+<div aria-live="polite" style="display: grid">
+<div data-sl-txt="0" aria-hidden="false" style="grid-area: 1 / 1; display: flex; flex-direction: column; gap: 14px; opacity: 1; transform: translateY(0px); transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); pointer-events: auto">
+<span style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(40px, 5vw, 72px); line-height: 1; color: #D9BD16">01</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(22px, 2.6vw, 34px); line-height: 1.1; text-transform: uppercase">Espacio amplio</h3>
+<p style="margin: 0; color: #CFCAC5; font-size: 18px; line-height: 1.55; max-width: 460px">Entrena sin gym lleno y sin hacer fila para usar el equipo. Hay lugar para moverte a tu ritmo.</p>
+</div>
+<div data-sl-txt="1" aria-hidden="true" style="grid-area: 1 / 1; display: flex; flex-direction: column; gap: 14px; opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); pointer-events: none">
+<span style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(40px, 5vw, 72px); line-height: 1; color: #D9BD16">02</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(22px, 2.6vw, 34px); line-height: 1.1; text-transform: uppercase">Cardio y peso libre</h3>
+<p style="margin: 0; color: #CFCAC5; font-size: 18px; line-height: 1.55; max-width: 460px">Elípticas, bancos, discos y mancuernas para combinar cardio y fuerza en la misma rutina.</p>
+</div>
+<div data-sl-txt="2" aria-hidden="true" style="grid-area: 1 / 1; display: flex; flex-direction: column; gap: 14px; opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); pointer-events: none">
+<span style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(40px, 5vw, 72px); line-height: 1; color: #D9BD16">03</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(22px, 2.6vw, 34px); line-height: 1.1; text-transform: uppercase">Equipo completo</h3>
+<p style="margin: 0; color: #CFCAC5; font-size: 18px; line-height: 1.55; max-width: 460px">Máquinas de fuerza, mancuernas y estaciones para trabajar cada grupo muscular.</p>
+</div>
+<div data-sl-txt="3" aria-hidden="true" style="grid-area: 1 / 1; display: flex; flex-direction: column; gap: 14px; opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); pointer-events: none">
+<span style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(40px, 5vw, 72px); line-height: 1; color: #D9BD16">04</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(22px, 2.6vw, 34px); line-height: 1.1; text-transform: uppercase">Limpieza y orden</h3>
+<p style="margin: 0; color: #CFCAC5; font-size: 18px; line-height: 1.55; max-width: 460px">Instalaciones limpias y equipo en su lugar, para que solo pienses en entrenar.</p>
+</div>
+<div data-sl-txt="4" aria-hidden="true" style="grid-area: 1 / 1; display: flex; flex-direction: column; gap: 14px; opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); pointer-events: none">
+<span style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(40px, 5vw, 72px); line-height: 1; color: #D9BD16">05</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(22px, 2.6vw, 34px); line-height: 1.1; text-transform: uppercase">Iluminación pro</h3>
+<p style="margin: 0; color: #CFCAC5; font-size: 18px; line-height: 1.55; max-width: 460px">Luz pensada para entrenar: espacios bien iluminados y un ambiente que motiva.</p>
+</div>
+<div data-sl-txt="5" aria-hidden="true" style="grid-area: 1 / 1; display: flex; flex-direction: column; gap: 14px; opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); pointer-events: none">
+<span style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(40px, 5vw, 72px); line-height: 1; color: #D9BD16">06</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(22px, 2.6vw, 34px); line-height: 1.1; text-transform: uppercase">Atención personalizada</h3>
+<p style="margin: 0; color: #CFCAC5; font-size: 18px; line-height: 1.55; max-width: 460px">Coaches certificados que te guían en técnica y te acompañan en tu progreso.</p>
+</div>
+<div data-sl-txt="6" aria-hidden="true" style="grid-area: 1 / 1; display: flex; flex-direction: column; gap: 14px; opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1); pointer-events: none">
+<span style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(40px, 5vw, 72px); line-height: 1; color: #D9BD16">07</span>
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(22px, 2.6vw, 34px); line-height: 1.1; text-transform: uppercase">Trato premium, pero humano</h3>
+<p style="margin: 0; color: #CFCAC5; font-size: 18px; line-height: 1.55; max-width: 460px">Un estudio exclusivo sin ser mamón: aquí te conocen por tu nombre.</p>
+</div>
+</div>
+<div style="display: flex; align-items: center; gap: 12px">
+<button type="button" data-prev aria-label="Anterior" style="flex: none; width: 56px; height: 56px; border-radius: 50%; border: 2px solid #F5F5F0; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5F5F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg></button>
+<button type="button" data-next aria-label="Siguiente" style="flex: none; width: 56px; height: 56px; border-radius: 50%; border: 2px solid #F5F5F0; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F5F5F0" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg></button>
+</div>
+<div style="display: flex; gap: 6px"><button type="button" data-go="0" aria-label="Ver característica 1" style="flex: 1 1 0; height: 44px; border: 0; padding: 0; background: transparent; cursor: pointer; display: flex; align-items: center"><span data-sl-dot="0" style="display: block; width: 100%; height: 4px; border-radius: 2px; background: #D9BD16; transition: background 0.4s ease"></span></button><button type="button" data-go="1" aria-label="Ver característica 2" style="flex: 1 1 0; height: 44px; border: 0; padding: 0; background: transparent; cursor: pointer; display: flex; align-items: center"><span data-sl-dot="1" style="display: block; width: 100%; height: 4px; border-radius: 2px; background: #3D3936; transition: background 0.4s ease"></span></button><button type="button" data-go="2" aria-label="Ver característica 3" style="flex: 1 1 0; height: 44px; border: 0; padding: 0; background: transparent; cursor: pointer; display: flex; align-items: center"><span data-sl-dot="2" style="display: block; width: 100%; height: 4px; border-radius: 2px; background: #3D3936; transition: background 0.4s ease"></span></button><button type="button" data-go="3" aria-label="Ver característica 4" style="flex: 1 1 0; height: 44px; border: 0; padding: 0; background: transparent; cursor: pointer; display: flex; align-items: center"><span data-sl-dot="3" style="display: block; width: 100%; height: 4px; border-radius: 2px; background: #3D3936; transition: background 0.4s ease"></span></button><button type="button" data-go="4" aria-label="Ver característica 5" style="flex: 1 1 0; height: 44px; border: 0; padding: 0; background: transparent; cursor: pointer; display: flex; align-items: center"><span data-sl-dot="4" style="display: block; width: 100%; height: 4px; border-radius: 2px; background: #3D3936; transition: background 0.4s ease"></span></button><button type="button" data-go="5" aria-label="Ver característica 6" style="flex: 1 1 0; height: 44px; border: 0; padding: 0; background: transparent; cursor: pointer; display: flex; align-items: center"><span data-sl-dot="5" style="display: block; width: 100%; height: 4px; border-radius: 2px; background: #3D3936; transition: background 0.4s ease"></span></button><button type="button" data-go="6" aria-label="Ver característica 7" style="flex: 1 1 0; height: 44px; border: 0; padding: 0; background: transparent; cursor: pointer; display: flex; align-items: center"><span data-sl-dot="6" style="display: block; width: 100%; height: 4px; border-radius: 2px; background: #3D3936; transition: background 0.4s ease"></span></button></div>
+</div>
+</div>
+</div>
+</section>
+<section id="horarios" style="max-width: 1280px; margin: 0 auto; padding: 64px 24px 80px">
+<div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 40px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #D9BD16">Horarios</p>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(30px, 3.8vw, 48px); text-transform: uppercase; line-height: 1">Encuentra tu hora</h2>
+</div>
+<div class="pf-hours" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 56px">
+<div class="pf-hours-card" style="flex: 1 1 260px; background: #1E1C1B; border: 1px solid #2E2B29; border-left: 6px solid #D9BD16; border-radius: 20px; padding: 24px">
+<p style="margin: 0 0 8px; color: #B4B4B8; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px">Lunes a viernes</p>
+<p style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(22px, 2.4vw, 30px)">5:30 AM – 10:30 PM</p>
+</div>
+<div class="pf-hours-card" style="flex: 1 1 260px; background: #1E1C1B; border: 1px solid #2E2B29; border-left: 6px solid #B44BE0; border-radius: 20px; padding: 24px">
+<p style="margin: 0 0 8px; color: #B4B4B8; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px">Sábados</p>
+<p style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(22px, 2.4vw, 30px)">7:00 AM – 3:00 PM</p>
+</div>
+<div class="pf-hours-card" style="flex: 1 1 260px; background: #1E1C1B; border: 1px solid #2E2B29; border-left: 6px solid #4FD1A5; border-radius: 20px; padding: 24px">
+<p style="margin: 0 0 8px; color: #B4B4B8; font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 2px">Domingos</p>
+<p style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(22px, 2.4vw, 30px)">8:00 AM – 2:00 PM</p>
+</div>
+</div>
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 24px; margin-bottom: 24px">
+<h3 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(22px, 2.6vw, 32px); text-transform: uppercase">Clases de la semana</h3>
+<p style="margin: 0; color: #B4B4B8; font-size: 16px">Toca una clase para reservar tu lugar.</p>
+</div>
+<div aria-label="Tipos de clase" style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px">
+<span id="pf-legend" style="display: contents"></span>
+</div>
+<div class="pf-week-desktop">
+<div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 24px 16px">
+<div id="pf-days" style="display: contents"></div>
+</div>
+</div>
+<div class="pf-week-mobile">
+<div role="tablist" aria-label="Día de la semana" style="display: flex; gap: 6px; margin-bottom: 14px">
+<div id="pf-tabs" style="display: contents"></div>
+</div>
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px">
+<div id="pf-mclasses" style="display: contents"></div>
+</div>
+</div>
+<p style="margin: 24px 0 0; color: #B4B4B8; font-size: 14px; line-height: 1.6"><strong style="color: #F5F5F0">Boxeo:</strong> disponible en todo el horario del gimnasio. Los horarios pueden cambiar en días festivos; escríbenos por WhatsApp para confirmar.</p>
+
+<div id="clase-muestra" style="margin-top: 56px; background: #1E1C1B; border: 1px solid #2E2B29; border-radius: 28px; padding: clamp(24px, 4vw, 48px); display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: flex-start">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 14px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #D9BD16">Agenda tu clase</p>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(30px, 3.8vw, 48px); text-transform: uppercase; line-height: 1">Aparta tu lugar</h2>
+<p style="margin: 0; color: #B4B4B8; font-size: 17px; line-height: 1.55">Elige tu clase en el horario, escribe tu nombre y mándanos tu reserva por WhatsApp. Te confirmamos tu lugar en el chat.</p>
+<p style="margin: 0; color: #B4B4B8; font-size: 17px; line-height: 1.55">¿Primera vez? Perfecto, te enseñamos desde lo básico.</p>
+</div>
+<div style="flex: 1 1 380px; min-width: 0">
+<div id="pf-nopick" style="display: contents">
+<div style="border: 2px dashed #3D3936; border-radius: 20px; padding: 32px; display: flex; flex-direction: column; gap: 16px; align-items: flex-start">
+<svg aria-hidden="true" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#D9BD16" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+<p style="margin: 0; font-size: 18px; font-weight: 600">Primero elige una clase del horario.</p>
+<a href="#horarios" style="text-decoration: none; border: 2px solid #F5F5F0; color: #F5F5F0; padding: 12px 22px; border-radius: 999px; font-weight: 600">Ver horario de clases</a>
+</div>
+</div>
+<div id="pf-haspick" style="display: none">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<div style="background: #151413; border: 2px solid #D9BD16; border-radius: 20px; padding: 20px 22px; display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 13px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #D9BD16">Tu clase</span>
+<span style="font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 22px; text-transform: uppercase"><span id="pf-pickname"></span></span>
+<span style="color: #B4B4B8"><span id="pf-pickwhen"></span></span>
+</div>
+<button type="button" data-clear style="background: transparent; color: #F5F5F0; border: 1px solid #3D3936; border-radius: 999px; padding: 10px 18px; font-weight: 600; cursor: pointer; min-height: 44px">Cambiar</button>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<label for="pf-nombre" style="font-weight: 600; font-size: 15px">Tu nombre</label>
+<input id="pf-nombre" name="nombre" type="text" autocomplete="name" placeholder="¿Cómo te llamas?" style="background: #151413; color: #F5F5F0; border: 1px solid #3D3936; border-radius: 12px; padding: 14px 16px; font-size: 16px; min-height: 48px; box-sizing: border-box">
+</div>
+<label style="display: flex; align-items: center; gap: 12px; font-size: 16px; cursor: pointer; min-height: 44px">
+<input id="pf-first" type="checkbox" style="width: 22px; height: 22px; accent-color: #D9BD16">
+Es mi primera clase en el estudio
+</label>
+<div id="pf-cansend" style="display: none">
+<a id="pf-wa" href="#" target="_blank" rel="noopener" style="text-decoration: none; text-align: center; background: #25D366; color: #0B2A16; padding: 16px 24px; border-radius: 999px; font-weight: 700; font-size: 17px">Reservar por WhatsApp</a>
+</div>
+<div id="pf-cantsend" style="display: contents">
+<button type="button" disabled="disabled" style="background: #2E2B29; color: #B4B4B8; border: 0; padding: 16px 24px; border-radius: 999px; font-weight: 700; font-size: 17px; min-height: 52px">Escribe tu nombre para reservar</button>
+</div>
+<p style="margin: 0; color: #9A9AA0; font-size: 13px; line-height: 1.5">Se abrirá WhatsApp con tu reserva lista para enviar. Tu lugar queda apartado cuando te confirmemos.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+
+<section id="testimonios" style="padding: 72px 0">
+<div style="max-width: 1280px; margin: 0 auto; padding: 0 24px; display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 24px; margin-bottom: 32px">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #D9BD16">Testimonios</p>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(24px, 3.4vw, 44px); text-transform: uppercase; line-height: 1.05">Lo que dicen nuestros clientes</h2>
+</div>
+<a href="https://www.instagram.com/the.perfect.fitness.studio/" target="_blank" rel="noopener" style="text-decoration: none; display: inline-flex; align-items: center; gap: 8px; background: #D9BD16; color: #151413; padding: 12px 22px; border-radius: 999px; font-weight: 800; font-size: 15px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>Síguenos en Instagram</a>
+</div>
+<div class="pf-testi-row" style="max-width: 1280px; margin: 0 auto; padding: 0 24px 8px; box-sizing: border-box; display: flex; gap: 16px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding-left: 24px">
+<article class="pf-testi" style="flex: 0 0 auto; width: 260px; scroll-snap-align: start; background: #151413; border: 1px solid #2E2B29; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
+<a href="https://www.instagram.com/p/DeR4qdUFcrY/" target="_blank" rel="noopener" aria-label="Ver testimonio en Instagram" style="position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 3 / 4; text-decoration: none; background: #1A1918; overflow: hidden">
+<img src="/assets/img/testi1.jpg" alt="Clienta de The Perfect Fitness Studio en un video de testimonio" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<svg aria-hidden="true" width="44" height="44" style="position: relative" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="rgba(21,20,19,0.6)" stroke="#F5F5F0" stroke-width="1.5"/><path d="M10 8l6 4-6 4z" fill="#F5F5F0"/></svg>
+</a>
+<div style="padding: 16px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; color: #CFCAC5; font-size: 14px; line-height: 1.5">Lo dicen ellas, no nosotros.</p>
+<a href="https://www.instagram.com/p/DeR4qdUFcrY/" target="_blank" rel="noopener" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 2px solid #F5F5F0; color: #F5F5F0; padding: 10px 14px; border-radius: 999px; font-weight: 700; font-size: 14px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>Ver en Instagram</a>
+</div>
+</article>
+<article class="pf-testi" style="flex: 0 0 auto; width: 260px; scroll-snap-align: start; background: #151413; border: 1px solid #2E2B29; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
+<a href="https://www.instagram.com/p/DdmAlK3jNkO/" target="_blank" rel="noopener" aria-label="Ver testimonio en Instagram" style="position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 3 / 4; text-decoration: none; background: #1A1918; overflow: hidden">
+<img src="/assets/img/testi2.jpg" alt="Cliente entrenando boxeo en un video de testimonio" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<svg aria-hidden="true" width="44" height="44" style="position: relative" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="rgba(21,20,19,0.6)" stroke="#F5F5F0" stroke-width="1.5"/><path d="M10 8l6 4-6 4z" fill="#F5F5F0"/></svg>
+</a>
+<div style="padding: 16px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; color: #CFCAC5; font-size: 14px; line-height: 1.5">¿Por qué elegiste The Perfect?</p>
+<a href="https://www.instagram.com/p/DdmAlK3jNkO/" target="_blank" rel="noopener" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 2px solid #F5F5F0; color: #F5F5F0; padding: 10px 14px; border-radius: 999px; font-weight: 700; font-size: 14px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>Ver en Instagram</a>
+</div>
+</article>
+<article class="pf-testi" style="flex: 0 0 auto; width: 260px; scroll-snap-align: start; background: #151413; border: 1px solid #2E2B29; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
+<a href="https://www.instagram.com/p/DdB9awXjNuq/" target="_blank" rel="noopener" aria-label="Ver testimonio en Instagram" style="position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 3 / 4; text-decoration: none; background: #1A1918; overflow: hidden">
+<img src="/assets/img/testi3.jpg" alt="Clienta en el área de indoor cycling en un video de testimonio" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<svg aria-hidden="true" width="44" height="44" style="position: relative" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="rgba(21,20,19,0.6)" stroke="#F5F5F0" stroke-width="1.5"/><path d="M10 8l6 4-6 4z" fill="#F5F5F0"/></svg>
+</a>
+<div style="padding: 16px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; color: #CFCAC5; font-size: 14px; line-height: 1.5">Lo dicen ellas, no nosotros.</p>
+<a href="https://www.instagram.com/p/DdB9awXjNuq/" target="_blank" rel="noopener" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 2px solid #F5F5F0; color: #F5F5F0; padding: 10px 14px; border-radius: 999px; font-weight: 700; font-size: 14px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>Ver en Instagram</a>
+</div>
+</article>
+<article class="pf-testi" style="flex: 0 0 auto; width: 260px; scroll-snap-align: start; background: #151413; border: 1px solid #2E2B29; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
+<a href="https://www.instagram.com/p/DeKXYooApV2/" target="_blank" rel="noopener" aria-label="Ver testimonio en Instagram" style="position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 3 / 4; text-decoration: none; background: #1A1918; overflow: hidden">
+<img src="/assets/img/testi4.jpg" alt="Cliente en el área de boxeo en un video de testimonio" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<svg aria-hidden="true" width="44" height="44" style="position: relative" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="rgba(21,20,19,0.6)" stroke="#F5F5F0" stroke-width="1.5"/><path d="M10 8l6 4-6 4z" fill="#F5F5F0"/></svg>
+</a>
+<div style="padding: 16px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; color: #CFCAC5; font-size: 14px; line-height: 1.5">¿Por qué elegiste The Perfect?</p>
+<a href="https://www.instagram.com/p/DeKXYooApV2/" target="_blank" rel="noopener" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 2px solid #F5F5F0; color: #F5F5F0; padding: 10px 14px; border-radius: 999px; font-weight: 700; font-size: 14px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>Ver en Instagram</a>
+</div>
+</article>
+<article class="pf-testi" style="flex: 0 0 auto; width: 260px; scroll-snap-align: start; background: #151413; border: 1px solid #2E2B29; border-radius: 20px; overflow: hidden; display: flex; flex-direction: column">
+<a href="https://www.instagram.com/p/DanW2_AicKL/" target="_blank" rel="noopener" aria-label="Ver testimonio en Instagram" style="position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 3 / 4; text-decoration: none; background: #1A1918; overflow: hidden">
+<img src="/assets/img/testi5.jpg" alt="Clienta en el área de pesas en un video de testimonio" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover">
+<svg aria-hidden="true" width="44" height="44" style="position: relative" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="11" fill="rgba(21,20,19,0.6)" stroke="#F5F5F0" stroke-width="1.5"/><path d="M10 8l6 4-6 4z" fill="#F5F5F0"/></svg>
+</a>
+<div style="padding: 16px; display: flex; flex-direction: column; gap: 10px">
+<p style="margin: 0; color: #CFCAC5; font-size: 14px; line-height: 1.5">Lo dicen ellas, no nosotros.</p>
+<a href="https://www.instagram.com/p/DanW2_AicKL/" target="_blank" rel="noopener" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 2px solid #F5F5F0; color: #F5F5F0; padding: 10px 14px; border-radius: 999px; font-weight: 700; font-size: 14px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="flex: none"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>Ver en Instagram</a>
+</div>
+</article>
+</div>
+</section>
+<section id="faq" style="background: rgba(30,28,27,0.82)">
+<div style="max-width: 900px; margin: 0 auto; padding: 80px 24px">
+<div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 36px; text-align: center; align-items: center">
+<p style="margin: 0; font-size: 14px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: #D9BD16">Preguntas frecuentes</p>
+<h2 style="margin: 0; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: clamp(24px, 3.4vw, 44px); text-transform: uppercase; line-height: 1.05">Resolvemos tus dudas</h2>
+<p style="margin: 0; color: #B4B4B8; font-size: 16px">Costos, horarios, clases y requisitos.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div id="pf-faqs" style="display: contents"></div>
+</div>
+<div style="margin-top: 32px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px 20px; text-align: center">
+<p style="margin: 0; color: #CFCAC5; font-size: 16px">¿Tienes otra duda?</p>
+<a href="https://wa.me/525644121830?text=Hola%2C%20tengo%20una%20duda%20sobre%20The%20Perfect%20Fitness%20Studio" target="_blank" rel="noopener" style="text-decoration: none; background: #D9BD16; color: #151413; padding: 12px 22px; border-radius: 999px; font-weight: 700">Pregúntanos por WhatsApp</a>
+</div>
+</div>
+</section>
+<footer id="contacto" style="background: rgba(14,13,12,0.92); border-top: 3px solid #63187A">
+<div class="pf-foot" style="max-width: 1280px; margin: 0 auto; padding: 56px 24px 24px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 36px 32px">
+<div class="pf-foot-brand" style="display: flex; flex-direction: column; gap: 14px">
+<img src="/assets/img/pf-logo.png" alt="The Perfect Fitness Studio" style="height: 40px; width: auto; align-self: flex-start">
+<p style="margin: 0; color: #CFCAC5; font-size: 14px; line-height: 1.6">Tu espacio, tu transformación.</p>
+<div style="display: flex; gap: 10px"><a href="https://www.instagram.com/the.perfect.fitness.studio/" target="_blank" rel="noopener" aria-label="Instagram" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #3D3936; display: flex; align-items: center; justify-content: center; text-decoration: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F5F5F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="#F5F5F0"/></svg></a><a href="https://www.facebook.com/profile.php?id=61588108065429" target="_blank" rel="noopener" aria-label="Facebook" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #3D3936; display: flex; align-items: center; justify-content: center; text-decoration: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#F5F5F0"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.3H8v3h2.5V21z"/></svg></a><a href="https://www.tiktok.com/@perfect.studio4" target="_blank" rel="noopener" aria-label="TikTok" style="width: 44px; height: 44px; border-radius: 50%; border: 1px solid #3D3936; display: flex; align-items: center; justify-content: center; text-decoration: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#F5F5F0"><path d="M16.6 3c.3 2.2 1.7 3.6 3.9 3.8v3a7 7 0 0 1-3.9-1.2v6.3A5.6 5.6 0 1 1 11 9.3v3.1a2.6 2.6 0 1 0 2.6 2.6V3z"/></svg></a></div>
+<a href="https://wa.me/525644121830?text=Hola%2C%20quiero%20informes%20de%20The%20Perfect%20Fitness%20Studio" target="_blank" rel="noopener" style="align-self: flex-start; text-decoration: none; background: #25D366; color: #0B2A16; padding: 10px 18px; border-radius: 999px; font-weight: 700; font-size: 14px">WhatsApp 56 4412 1830</a>
+</div>
+<div>
+<h2 style="margin: 0 0 14px; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: #D9BD16">Sucursales</h2>
+<div style="display: flex; flex-direction: column; gap: 14px">
+<div><p style="margin: 0; font-weight: 700; font-size: 15px">Tecámac</p><p style="margin: 2px 0 0; color: #CFCAC5; font-size: 14px; line-height: 1.6">Valle San Miguel 215, Plaza Eves, Ojo de Agua, 55770, Méx.</p><a href="https://maps.app.goo.gl/85FJfRutcDW53GMG7" target="_blank" rel="noopener" style="color: #D9BD16; font-size: 14px; font-weight: 600">Cómo llegar</a></div>
+<div><p style="margin: 0; font-weight: 700; font-size: 15px">Pachuca</p><p style="margin: 2px 0 0; color: #CFCAC5; font-size: 14px; line-height: 1.6">Pilotos 208, Carlos Rovirosa, 42082 Pachuca de Soto, Hgo.</p><a href="https://maps.app.goo.gl/97KxiCiWRRUf5NF48" target="_blank" rel="noopener" style="color: #D9BD16; font-size: 14px; font-weight: 600">Cómo llegar</a></div>
+</div>
+</div>
+<div>
+<h2 style="margin: 0 0 14px; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: #D9BD16">Horarios</h2>
+<p style="margin: 0; color: #CFCAC5; font-size: 14px; line-height: 1.6">Lun a Vie: 5:30 AM – 10:30 PM<br>Sábado: 7:00 AM – 3:00 PM<br>Domingo: 8:00 AM – 2:00 PM</p>
+<h2 style="margin: 22px 0 10px; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: #D9BD16">Formas de pago</h2>
+<p style="margin: 0; color: #CFCAC5; font-size: 14px; line-height: 1.6">Efectivo, tarjeta de crédito y transferencia.</p>
+</div>
+<nav aria-label="Enlaces del pie de página">
+<h2 style="margin: 0 0 14px; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; color: #D9BD16">Enlaces</h2>
+<ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column"><li><a href="#clases" style="text-decoration: none; color: #CFCAC5; font-size: 14px; padding: 4px 0; display: inline-block">Servicios y clases</a></li><li><a href="#planes" style="text-decoration: none; color: #CFCAC5; font-size: 14px; padding: 4px 0; display: inline-block">Planes</a></li><li><a href="#instalaciones" style="text-decoration: none; color: #CFCAC5; font-size: 14px; padding: 4px 0; display: inline-block">Instalaciones</a></li><li><a href="#horarios" style="text-decoration: none; color: #CFCAC5; font-size: 14px; padding: 4px 0; display: inline-block">Horarios y reservas</a></li><li><a href="#faq" style="text-decoration: none; color: #CFCAC5; font-size: 14px; padding: 4px 0; display: inline-block">Preguntas frecuentes</a></li><li><a href="#contacto" style="text-decoration: none; color: #CFCAC5; font-size: 14px; padding: 4px 0; display: inline-block">Contacto</a></li></ul>
+</nav>
+</div>
+<div style="border-top: 1px solid #2E2B29">
+<div style="max-width: 1280px; margin: 0 auto; padding: 18px 24px 28px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; color: #9A9AA0; font-size: 13px">
+<span>© 2026 The Perfect Fitness Studio. Todos los derechos reservados.</span>
+<span>Aviso de privacidad [POR CONFIRMAR]</span>
+</div>
+</div>
+</footer>
+
+<a href="https://wa.me/525644121830?text=Hola%2C%20quiero%20informes%20de%20The%20Perfect%20Fitness%20Studio" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp" style="position: fixed; right: 24px; bottom: 24px; z-index: 50; width: 64px; height: 64px; border-radius: 50%; background: #25D366; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 0 6px 20px rgba(0,0,0,0.45)"><svg aria-hidden="true" width="32" height="32" viewBox="0 0 24 24" fill="#0B2A16"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3c-.2.3-.9.9-.9 2.2s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4.1 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.5-.2z"/></svg></a>
+</div>
+<script>window.PF_TPL = {"legend": "\n<span style=\"display: inline-flex; align-items: center; gap: 8px; background: #1E1C1B; border: 1px solid #2E2B29; border-radius: 999px; padding: 6px 12px; font-size: 13px; font-weight: 600\"><span style=\"width: 10px; height: 10px; border-radius: 50%; background: {{ lg.color }}\"></span>{{ lg.name }}</span>\n", "day": "\n<div style=\"display: flex; flex-direction: column; gap: 12px\">\n<h4 style=\"margin: 0; padding-bottom: 10px; border-bottom: 3px solid #A425CB; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 20px; text-transform: uppercase; color: #D9BD16\">{{ day.name }}</h4>\n{{ day.classesHtml }}\n</div>\n", "cls": "\n<button type=\"button\" data-pick=\"{{ c.id }}\" aria-pressed=\"{{ c.pressed }}\" style=\"text-align: left; cursor: pointer; font-family: inherit; color: #F5F5F0; background: {{ c.bg }}; border: 2px solid {{ c.border }}; border-left: 6px solid {{ c.color }}; border-radius: 16px; padding: 16px 18px; display: flex; flex-direction: column; gap: 4px; min-height: 44px\">\n<span style=\"font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 20px; color: {{ c.color }}\">{{ c.time }}</span>\n<span style=\"font-size: 17px; font-weight: 600\">{{ c.name }}</span>\n</button>\n", "tab": "\n<button type=\"button\" role=\"tab\" aria-selected=\"{{ t.selected }}\" aria-label=\"{{ t.name }}\" data-tab=\"{{ t.i }}\" style=\"flex: 1 1 0; min-width: 0; min-height: 48px; border-radius: 12px; border: 2px solid {{ t.border }}; background: {{ t.bg }}; color: {{ t.color }}; font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 13px; text-transform: uppercase; cursor: pointer; padding: 0\">{{ t.short }}</button>\n", "mcls": "\n<button type=\"button\" data-pick=\"{{ c.id }}\" aria-pressed=\"{{ c.pressed }}\" style=\"text-align: left; cursor: pointer; font-family: inherit; color: #F5F5F0; background: {{ c.bg }}; border: 2px solid {{ c.border }}; border-left: 6px solid {{ c.color }}; border-radius: 14px; padding: 12px 14px; display: flex; flex-direction: column; gap: 2px; min-height: 64px\">\n<span style=\"font-family: Archivo, sans-serif; font-stretch: 125%; font-weight: 900; font-size: 16px; color: {{ c.color }}\">{{ c.time }}</span>\n<span style=\"font-size: 15px; font-weight: 600\">{{ c.name }}</span>\n</button>\n", "faq": "\n<div style=\"background: #151413; border: 1px solid {{ f.border }}; border-radius: 16px; overflow: hidden; transition: border-color 0.3s ease\">\n<h3 style=\"margin: 0\">\n<button type=\"button\" data-faq=\"{{ f.i }}\" aria-expanded=\"{{ f.expanded }}\" style=\"width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; text-align: left; background: transparent; border: 0; color: #F5F5F0; padding: 20px 22px; font-family: inherit; font-size: 17px; font-weight: 700; cursor: pointer; min-height: 44px\">\n<span>{{ f.q }}</span>\n<span aria-hidden=\"true\" style=\"flex: none; width: 32px; height: 32px; border-radius: 50%; background: {{ f.iconBg }}; color: {{ f.iconFg }}; display: flex; align-items: center; justify-content: center; font-size: 22px; font-weight: 700; line-height: 1; transform: rotate({{ f.rot }}); transition: transform 0.3s ease, background 0.3s ease\">+</span>\n</button>\n</h3>\n{{ f.ansHtml }}\n</div>\n", "ans": "<p class=\"pf-faq-a\" style=\"margin: 0; padding: 0 22px 22px; color: #CFCAC5; font-size: 16px; line-height: 1.6\">{{ f.a }}</p>"};
+window.PF_FAQ = [["¿Cuánto cuesta la mensualidad?", "Plan Gym: $599 al mes. Plan Boxeo: $499 al mes. Plan Fitness Total (gym, boxeo y 5 clases): $749 al mes. También hay planes trimestrales: Gym Trimestral en $1,200 y Box Trimestral en $999 por 3 meses. Consulta todos los detalles en la sección de Planes."], ["¿Cuánto cuesta la inscripción?", "Plan Gym: $299. Fitness Total, Gym Trimestral y Box Trimestral: $200. El Paquete Inicio Boxeo ya incluye la inscripción. En los planes trimestrales, si te inscribes con otra persona, ninguno de los dos paga inscripción. La inscripción del Plan Boxeo está por confirmar."], ["¿Cuáles son los horarios?", "Lunes a viernes de 5:30 AM a 10:30 PM, sábados de 7:00 AM a 3:00 PM y domingos de 8:00 AM a 2:00 PM. Es el mismo horario en Tecámac y en Pachuca. Los días festivos puede cambiar."], ["¿Qué clases tienen?", "Indoor, Yoga, Meditación, Baile Fit, Heels, Heels / Jazz, Salsa, Zumba y Ritmos latinos; revisa días y horas en el calendario de la sección Horarios. El boxeo está disponible en todo el horario del gimnasio."], ["¿Cómo reservo una clase?", "En el calendario de Horarios toca la clase que quieres, escribe tu nombre y presiona \"Reservar por WhatsApp\". Te confirmamos tu lugar por chat."], ["¿Puedo conocer el gimnasio antes de inscribirme?", "Sí. Escríbenos por WhatsApp para agendar tu visita y conocer las instalaciones. Condiciones de la clase muestra: [POR CONFIRMAR]."], ["¿Necesito experiencia para empezar?", "No. Nuestros coaches certificados te guían desde lo básico, ya sea que empieces de cero o vengas de regreso."], ["¿Qué necesito llevar?", "Ropa deportiva, tenis, toalla y tu botella de agua. Para boxeo necesitas guantes y vendas; el Paquete Inicio Boxeo ya los incluye. Contamos con regaderas. Requisitos para inscribirte: [POR CONFIRMAR]."], ["¿Puedo entrenar en las dos sucursales con la misma membresía?", "Sí. Con tu membresía puedes entrenar tanto en Tecámac como en Pachuca."], ["¿Qué formas de pago aceptan?", "Aceptamos efectivo, tarjeta de crédito y transferencia."]];</script>
+<script src="/assets/app.js" defer></script>
+</body>
+</html>

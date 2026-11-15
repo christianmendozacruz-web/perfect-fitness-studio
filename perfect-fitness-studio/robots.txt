@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://theperfectfit.mx/sitemap.xml

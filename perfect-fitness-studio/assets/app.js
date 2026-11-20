@@ -67,17 +67,18 @@
 
   /* ---------- Horarios y reservas ---------- */
   var SCHEDULE = [
-    { name: 'Lunes', classes: [['8:00 AM', 'Indoor'], ['9:30 AM', 'Yoga'], ['6:00 PM', 'Yoga'], ['7:30 PM', 'Indoor']] },
-    { name: 'Martes', classes: [['9:00 AM', 'Baile Fit'], ['10:00 AM', 'Meditación'], ['6:00 PM', 'Heels'], ['8:00 PM', 'Indoor']] },
-    { name: 'Miércoles', classes: [['8:30 AM', 'Indoor'], ['10:00 AM', 'Yoga'], ['6:00 PM', 'Yoga'], ['7:30 PM', 'Salsa']] },
-    { name: 'Jueves', classes: [['8:30 AM', 'Indoor'], ['10:00 AM', 'Yoga'], ['7:00 PM', 'Yoga'], ['8:15 PM', 'Heels / Jazz']] },
-    { name: 'Viernes', classes: [['8:00 AM', 'Meditación'], ['9:30 AM', 'Zumba'], ['7:00 PM', 'Indoor'], ['8:30 PM', 'Ritmos latinos']] }
+    { name: 'Lunes', classes: [['8:00 AM', 'Yoga'], ['9:30 AM', 'Funcional'], ['6:00 PM', 'Pilates'], ['7:10 PM', 'Indoor']] },
+    { name: 'Martes', classes: [['9:00 AM', 'Baile Fit'], ['10:00 AM', 'Meditación'], ['6:00 PM', 'Zumba'], ['7:10 PM', 'Indoor']] },
+    { name: 'Miércoles', classes: [['8:00 AM', 'Yoga'], ['9:30 AM', 'Pilates'], ['6:00 PM', 'Yoga'], ['7:10 PM', 'Indoor']] },
+    { name: 'Jueves', classes: [['8:00 AM', 'Indoor'], ['9:15 AM', 'Yoga'], ['6:00 PM', 'Step'], ['7:00 PM', 'Zumba']] },
+    { name: 'Viernes', classes: [['9:15 AM', 'Yoga'], ['10:15 AM', 'Zumba'], ['6:00 PM', 'Salsa'], ['7:10 PM', 'Indoor']] },
+    { name: 'Sábado', classes: [['8:00 AM', 'Indoor'], ['9:15 AM', 'Heels']] }
   ];
-  var CLR = { 'Indoor': '#FF8A3D', 'Yoga': '#4FD1A5', 'Meditación': '#8FA8FF', 'Baile Fit': '#FF6FB1', 'Heels': '#D77CFF', 'Heels / Jazz': '#D77CFF', 'Salsa': '#FF6B6B', 'Zumba': '#F5D547', 'Ritmos latinos': '#38C6F4' };
-  var LEGEND = [['Indoor', '#FF8A3D'], ['Yoga', '#4FD1A5'], ['Meditación', '#8FA8FF'], ['Baile Fit', '#FF6FB1'], ['Heels / Jazz', '#D77CFF'], ['Salsa', '#FF6B6B'], ['Zumba', '#F5D547'], ['Ritmos latinos', '#38C6F4']];
-  var SHORT = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie'];
+  var CLR = { 'Indoor': '#FF8A3D', 'Yoga': '#4FD1A5', 'Funcional': '#38C6F4', 'Pilates': '#B4F06A', 'Meditación': '#8FA8FF', 'Baile Fit': '#FF6FB1', 'Zumba': '#F5D547', 'Step': '#FFFFFF', 'Salsa': '#FF6B6B', 'Heels': '#D77CFF' };
+  var LEGEND = [['Indoor', '#FF8A3D'], ['Yoga', '#4FD1A5'], ['Funcional', '#38C6F4'], ['Pilates', '#B4F06A'], ['Meditación', '#8FA8FF'], ['Baile Fit', '#FF6FB1'], ['Zumba', '#F5D547'], ['Step', '#FFFFFF'], ['Salsa', '#FF6B6B'], ['Heels', '#D77CFF']];
+  var SHORT = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
   var wd = new Date().getDay();
-  var state = { pick: null, mDay: (wd >= 1 && wd <= 5) ? wd - 1 : 0 };
+  var state = { pick: null, mDay: (wd >= 1 && wd <= 6) ? wd - 1 : 0 };
 
   function classObj(d, di, c, ci) {
     var id = di + '-' + ci, sel = state.pick && state.pick.id === id;
